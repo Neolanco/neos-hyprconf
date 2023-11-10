@@ -1,0 +1,1 @@
+~/.config/hypr/background-extraction/copycolors ~/.config/hypr/background.png -n 3 | sed 's/\x1B\[[0-9;]*[JKmsu]//g' | sed 's/#//g' > ~/.config/hypr/background-extraction/extracted-colors.txt
