@@ -19,10 +19,10 @@ Config(
   hide_icons: false, 
 
   // ignore exclusive zones, f.e. Waybar  
-  ignore_exclusive_zones: false, 
+  ignore_exclusive_zones: true, 
 
   // Layer shell layer: Background, Bottom, Top, Overlay  
-  layer: Overlay, 
+  layer: Top, 
   
   // Hide the plugin info panel
   hide_plugin_info: false, 

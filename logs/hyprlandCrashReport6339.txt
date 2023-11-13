@@ -1,0 +1,140 @@
+--------------------------------------------
+   Hyprland Crash Report
+--------------------------------------------
+Maybe you should try dusting your PC in the meantime?
+
+Hyprland received signal 6 (Aborted)
+
+Version: 1b48642fd15c433c53876f1b933dcd46265caf8f
+Tag: v0.30.0
+
+System info:
+	System name: Linux
+	Node name: remote-arch
+	Release: 6.6.1-arch1-1
+	Version: #1 SMP PREEMPT_DYNAMIC Wed, 08 Nov 2023 16:05:38 +0000
+
+GPU:
+	00:01.0 VGA compatible controller [0300]: Device [1234:1111] (rev 02) (prog-if 00 [VGA controller])
+
+
+os-release:
+	NAME="Arch Linux"
+	PRETTY_NAME="Arch Linux"
+	ID=arch
+	BUILD_ID=rolling
+	ANSI_COLOR="38;2;23;147;209"
+	HOME_URL="https://archlinux.org/"
+	DOCUMENTATION_URL="https://wiki.archlinux.org/"
+	SUPPORT_URL="https://bbs.archlinux.org/"
+	BUG_REPORT_URL="https://bugs.archlinux.org/"
+	PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+	LOGO=archlinux-logo
+	
+
+
+Backtrace:
+	#0 | Hyprland(_Z12getBacktracev+0x62) [0x55892ac20f92]
+		??
+		??:0
+	#1 | Hyprland(_ZN13CrashReporter18createAndSaveCrashEi+0x51e) [0x55892abf75fe]
+		??
+		??:0
+	#2 | Hyprland(_Z25handleUnrecoverableSignali+0x47) [0x55892ab7c047]
+		??
+		??:0
+	#3 | /usr/lib/libc.so.6(+0x3e710) [0x7f968a25c710]
+		??
+		??:0
+	#4 | /usr/lib/libc.so.6(+0x8e83c) [0x7f968a2ac83c]
+		??
+		??:0
+	#5 | /usr/lib/libc.so.6(raise+0x18) [0x7f968a25c668]
+		??
+		??:0
+	#6 | /usr/lib/libc.so.6(abort+0xd7) [0x7f968a2444b8]
+		??
+		??:0
+	#7 | /usr/lib/libstdc++.so.6(+0x9ca6f) [0x7f968a49ca6f]
+		??
+		??:0
+	#8 | /usr/lib/libstdc++.so.6(+0xb011c) [0x7f968a4b011c]
+		??
+		??:0
+	#9 | /usr/lib/libstdc++.so.6(+0xb0189) [0x7f968a4b0189]
+		??
+		??:0
+	#10 | /usr/lib/libstdc++.so.6(+0xb03ed) [0x7f968a4b03ed]
+		??
+		??:0
+	#11 | Hyprland(+0x685ae) [0x55892ab435ae]
+		??
+		??:0
+	#12 | Hyprland(_ZN11CCompositor10initServerEv+0x6c8) [0x55892ab839e8]
+		??
+		??:0
+	#13 | Hyprland(main+0x8b6) [0x55892ab66e86]
+		??
+		??:0
+	#14 | /usr/lib/libc.so.6(+0x27cd0) [0x7f968a245cd0]
+		??
+		??:0
+	#15 | /usr/lib/libc.so.6(__libc_start_main+0x8a) [0x7f968a245d8a]
+		??
+		??:0
+	#16 | Hyprland(_start+0x25) [0x55892ab78a45]
+		??
+		??:0
+
+
+Log tail:
+[LOG] Release: 6.6.1-arch1-1
+[LOG] Version: #1 SMP PREEMPT_DYNAMIC Wed, 08 Nov 2023 16:05:38 +0000
+
+
+[LOG] GPU information:
+00:01.0 VGA compatible controller [0300]: Device [1234:1111] (rev 02) (prog-if 00 [VGA controller])
+
+
+[LOG] os-release:
+NAME="Arch Linux"
+PRETTY_NAME="Arch Linux"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://archlinux.org/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://bugs.archlinux.org/"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo
+
+[LOG] ========================
+
+
+
+[INFO] If you are crashing, or encounter any bugs, please consult https://wiki.hyprland.org/Crashes-and-Bugs/
+
+
+[LOG] 
+Current splash: Some legends are told, some turn to dust or to gold
+
+
+[LOG] Creating the HookSystem!
+[LOG] Creating the KeybindManager!
+[LOG] [hookSystem] New hook event registered: configReloaded
+[LOG] Creating the AnimationManager!
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 54.60µs. Estimated average calc time: 0.06µs.
+[LOG] Creating the ConfigManager!
+[LOG] Creating the CHyprError!
+[LOG] [hookSystem] New hook event registered: focusedMon
+[LOG] [hookSystem] New hook event registered: preRender
+[LOG] Creating the LayoutManager!
+[LOG] Reloading the config!
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 13.87µs. Estimated average calc time: 0.05µs.
+[LOG] Using config: /home/leon/.config/hypr/hyprland.conf
+[LOG] Created a bezier curve, baked 255 points, mem usage: 4.08kB, time to bake: 11.90µs. Estimated average calc time: 0.04µs.
+[LOG] Registered dynamic var "$mainMod" -> SUPER
+[LOG] Disabling stdout logs! Check the log for further logs.
+[CRITICAL] m_sWLRRenderer was NULL!
+[CRITICAL] Critical error thrown: wlr_gles2_renderer_create_with_drm_fd() failed!

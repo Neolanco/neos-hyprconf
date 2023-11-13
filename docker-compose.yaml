@@ -1,0 +1,23 @@
+version: '3.8'
+
+#    environment:
+#      - TZ=Europe/Berlin
+
+services:
+  syncthing:
+    container_name: syncthing
+    restart: unless-stopped
+    image: lscr.io/linuxserver/syncthing:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Berlin
+    ports:
+      - 21025:21027/udp
+      - 22005:22000/tcp
+      - 22005:22000/udp
+      - 8385:8384/tcp
+    volumes:
+      - ./syncthing/config:/config
+      - ./syncthing/files:/files
+      - ./syncthing/backup:/backup

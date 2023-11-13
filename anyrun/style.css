@@ -1,21 +1,29 @@
-@define-color color-accent-0-0 #7B180D;
-@define-color color-accent-0-1 #CDBAA2;
-@define-color color-accent-0-2 #D0391F;
 
 
+
+/*https://github.com/Kirottu/anyrun#Styling*/
+@import url("../general.style.css");
 
 #window {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: @youc-background-alpha-1;
   }
   
+entry{
+    border-radius: 10px;
+    background-color: @color-1-0-2;
+    color: #FFFFFF;
+    border-color: @color-1-0-2;
+}
   box#main {
     border-radius: 10px;
-    background-color: @theme_bg_color;
+    background-color: @color-1-0-2;
+    border-color: @color-1-0-2;
   }
   
   list#main {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: @youc-background-alpha-1;
     border-radius: 10px;
+    border-color: @color-1-0-2;
   }
   
   list#plugin {
