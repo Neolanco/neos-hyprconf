@@ -1,4 +1,4 @@
-./setup-aur.sh
+./setup-yay.sh
 yay
 yay -S swaylock-effects swaync hyprpicker swayosd-git
 sudo pacman -S --needed --noconfirm awesome-terminal-fonts ttf-font-awesom
