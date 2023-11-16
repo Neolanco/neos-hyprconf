@@ -1,0 +1,2 @@
+https://wiki.hyprland.org/Configuring/Variables/#misc
+    default wallpaper randomness 

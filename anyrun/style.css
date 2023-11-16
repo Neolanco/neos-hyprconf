@@ -18,16 +18,19 @@ entry{
     border-radius: 10px;
     background-color: @color-1-0-2;
     border-color: @color-1-0-2;
+    color: #FFFFFF;
   }
   
   list#main {
     background-color: @youc-background-alpha-1;
     border-radius: 10px;
     border-color: @color-1-0-2;
+    color: #FFFFFF;
   }
   
   list#plugin {
     background-color: rgba(0, 0, 0, 0);
+    color: #FFFFFF;
   }
   
   label#match-desc {
@@ -36,4 +39,8 @@ entry{
   
   label#plugin {
     font-size: 14px;
+  }
+  match#GtkBox{
+    background-color: @color-accent-0-0;
+    color: #FFFFFF;
   }
