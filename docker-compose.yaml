@@ -4,6 +4,7 @@ version: '3.8'
 #      - TZ=Europe/Berlin
 
 services:
+
   syncthing:
     container_name: syncthing
     restart: unless-stopped
@@ -21,3 +22,6 @@ services:
       - ./syncthing/config:/config
       - ./syncthing/files:/files
       - ./syncthing/backup:/backup
+      - /mnt/Sigma/Home/Syncthing:/files/home/syncthing
+      - /mnt/Sigma/Home/Pictures/Screenshots:/files/home/pictures/screenshots
+      - /home/leon/.config/hypr:/files/home/.config/hypr
